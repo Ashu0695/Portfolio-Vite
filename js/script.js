@@ -1,5 +1,5 @@
 // ACCORDION
-function toggleAcc(header) {
+window.toggleAcc = function(header) {
   var item = header.closest('.acc-item');
   var wasOpen = item.classList.contains('open');
   document.querySelectorAll('.acc-item').forEach(function(i) { i.classList.remove('open'); });
